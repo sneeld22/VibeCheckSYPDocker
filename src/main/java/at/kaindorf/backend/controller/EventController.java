@@ -25,6 +25,7 @@ public class EventController {
     public ResponseEntity<Page<EventDto>> getAllEvents(
             @PageableDefault(size = 5, sort = "eventDate") Pageable pageable
     ) {
+        System.out.println("Test");
         return ResponseEntity.ok(eventService.findAll(pageable));
     }
 
