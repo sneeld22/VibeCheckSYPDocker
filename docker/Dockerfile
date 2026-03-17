@@ -1,6 +1,7 @@
 FROM eclipse-temurin:21-jre
 
-RUN mkdir /opt/application
-COPY /*.jar /opt/application/backend.jar
 WORKDIR /opt/application
+
+COPY target/*.jar backend.jar
+
 CMD ["java", "-jar", "backend.jar"]
