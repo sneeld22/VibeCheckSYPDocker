@@ -1,6 +1,0 @@
-docker build --tag es-syp-backend ./target
-docker run -p 8080:8080 --network pos-syp es-syp-backend
-
-docker build --tag ghcr.io/sneeld22/es-syp-backend:latest ./target
-
-docker login ghcr.io
