@@ -1,0 +1,31 @@
+GET localhost:8080/api/artists
+
+###
+
+GET localhost:8080/api/artists/5
+
+###
+
+GET localhost:8080/api/events?page=1
+
+###
+
+GET localhost:8080/api/events/1
+
+###
+
+GET localhost:8080/api/events/artist/6
+
+###
+
+GET localhost:8080/api/ratings/event/1
+
+###
+
+POST localhost:8080/api/ratings/1
+Content-Type: application/json
+
+{
+    "stars": 4,
+    "comment": "very good"
+}
